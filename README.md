@@ -1,12 +1,15 @@
 #Referential Universal Digital Indexer (RUDI) Forecasting Demo
+
 This is a demonstration of my capstone team project for the Master's in Predictive Analytics program at Northwestern University. Fans of "The Jetsons" cartoon may recognize the name we chose for our forecasting system. The capstone project automatically analyzed and forecasted product shipments for a hierarchy of time series representing inventory data for a consumer packaged goods company. The hierarchy consisted of 140 individual products organized into 50 product groups, for a total of 191 time series. The team's system improved upon the company's internal SAP based forecasting system by a savings of approximately $1.1 Million over 6 months.
 
 ##RUDI Processing
+
 RUDI generates forecasts by running each individual time series through a suite of modeling methods. Backtesting is used to calculate the Mean Absolute Percent Error (MAPE) of forecasts for each method. The three models with the lowest MAPE are saved. Finally the forecasts for the top three models are reconciled to account for the hierarchy.
 
-![RUDI Forecasting](./RUDI_forecasting.jpg)
+![RUDI Forecasting](./rudi_forecasting.jpg)
 
 ###Modeling
+
 RUDI uses the following modeling methods:
 
 |Model | Description|
@@ -33,14 +36,17 @@ Bootstrapping is a technique where the time series is decomposed into its Season
 Each model is tested for a range of seasonal periods, including no seasonal periods.
 
 ###Backtesting
+
 Backtesting is performed by reserving a fixed number of values from the end of the series (the holdout samples). A model is fitted to the data minus the holdout samples. A forecast horizon of width __H__ is then generated and error calculated against the corresponding __H__ holdout samples. The process is repeated by adding one holdout sample to the series and refitting the model. Another forecast is created and error calculated. This process repeats until the backtesting process has used all of the holdout samples. The overall mean error from the backtesting is used to compare models.
 
 ![Backtesting](./backtest.jpg)
 
 ###Reconciliation
+
 Reconciliation is a process by which forecasts in the hierarchy are revised so that forecasts lower in the tree, when aggregated, match forecasts higher in the tree. RUDI uses Optimal Combination, where forecasts are generated for all levels of the hierarchy and a process similar to linear regression is used to adjust all levels simultaneously. This method is described further in the book [__Forecasting: Principles and Practice__](https://www.otexts.org/fpp/9/4 ).
 
 ##Changes in Scope for Demo
+
 The original project required extensive computer resources, therefor this demonstration reduces scope in order to produce forecasts in a reasonable amount of time:
 
 * A shiny app was created to allow users to upload CSV files for processing.
@@ -63,9 +69,10 @@ The original project required extensive computer resources, therefor this demons
 |All bagging methods except for ARIMA and ETS|
 
 ##Sytem Diagram
+
 The RUDI demo is separated into two major components. The front end is an R Shiny App, and is hosted by R Shiny Server, running on an Ubuntu Server instance on Amazon Web Services. The back end is performs all of the modeling, and is running on a home PC. Redis Server is used to communicate between the front and back ends.
 
-![System Diagram](./RUDI_system_diagram.jpg)
+![System Diagram](./rudi_system_diagram.jpg)
 
 ##The Demo
 

@@ -87,7 +87,8 @@ The RUDI demo presents an **[Upload]** button, which uplooads a CSV file as inpu
 * Backtest Holdout Samples - The number of holdout samples for backtesting. The number of holdout samples is limited to 6. Large numbers of holdout samples greatly increases the processing required.
 
 * Backtest Window Size - The number of steps forecasted for each backtest step.
-Forecast Horizon (defaults to 1) - The number of out of sample steps to forecast. Short forecast horizons don't look very interesting.
+
+* Forecast Horizon (defaults to 1) - The number of out of sample steps to forecast. Short forecast horizons don't look very interesting.
 
 * Number of Steps in Horizon - The number of steps to forecast. This defaults to 1, which isn't very interesting. 
 

@@ -1,4 +1,4 @@
-#Referential Universal Digital Indexer (RUDI) Forecasting Demo
+# Referential Universal Digital Indexer (RUDI) Forecasting Demo
 
 This is a demonstration of my capstone team project for the Master's in Predictive Analytics program at Northwestern University. Fans of "The Jetsons" cartoon may recognize the name we chose for our forecasting system. The capstone project automatically analyzed and forecasted product shipments for a hierarchy of time series representing inventory data for a consumer packaged goods company. The hierarchy consisted of 140 individual products organized into 50 product groups, for a total of 191 time series. The team's system improved upon the company's internal SAP based forecasting system by a savings of approximately $1.1 Million over 6 months.
 

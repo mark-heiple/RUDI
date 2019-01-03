@@ -68,7 +68,7 @@ The original project required extensive computer resources, therefor this demons
 |STLM (All except ARIMA forecasting of trend)|
 |All bagging methods except for ARIMA and ETS|
 
-## Sytem Diagram
+## System Diagram
 
 The RUDI demo is separated into two major components. The front end is an R Shiny App, and is hosted by R Shiny Server, running on an Ubuntu Server instance on Amazon Web Services. The back end is performs all of the modeling, and is running on a home PC. Redis Server is used to communicate between the front and back ends.
 

@@ -80,7 +80,7 @@ The RUDI demo presents an **[Upload]** button, which uplooads a CSV file as inpu
 
 * The TIME SERIES column is the column to model.
 
-* The DATE column is optional it is only used in the plots.
+* The DATE column is optional.
 
 * Up to two seasonal periods can be defined, a value of 1 means no season. Seasonal periods are much more processor intensive than no seasons. Big seasonal periods are more processor intensive than short periods.
 

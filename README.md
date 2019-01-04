@@ -28,7 +28,7 @@ RUDI uses the following modeling methods:
 |BSTS|Bayesian structural time series. Attempts to relate equations describing observed variables to unobserved latent variables and models the relationship.|
 |ARIMA with Fourier Seasonal Component|ARIMA model with the seasonal component represented as Fourier series and modeled as regression components.|
 |ARIMA + Random Forest|Combines ARIMA model of trend, Random Forest model of detrended series (including the seasonal component).|
-|Bagging|Bootstrap Aggregation of ETS, ARIMA, THETAM, NNETAR, TBATS, STLM, and TSLM models.|
+|Bagging|Bootstrap Aggregation of all models.|
 |Ensembles|All of the model forecasts are averaged 2 and 3 at a time, keeping the best.|
 
 Bootstrapping is a technique where the time series is decomposed into its Season, Trend, and Remainder components. The Remainder is sliced into blocks. The blocks are then randomly sampled and recombined with the Season and Trend. A model is fitted to this Bootstrapped series. The Bootstrap process is repeated __M__ times, generating __M__ different forecasts. The forecasts are then Aggregated together by averaging them.
@@ -37,7 +37,7 @@ Each model is tested for a range of seasonal periods, including no seasonal peri
 
 ### Backtesting
 
-Backtesting is performed by reserving a fixed number of values from the end of the series (the holdout samples). A model is fitted to the data minus the holdout samples. A forecast horizon of width __H__ is then generated and error calculated against the corresponding __H__ holdout samples. The process is repeated by adding one holdout sample to the series and refitting the model. Another forecast is created and error calculated. This process repeats until the backtesting process has used all of the holdout samples. The overall mean error from the backtesting is used to compare models.
+Backtesting is performed by reserving a fixed number of values from the end of the series (the holdout samples). A model is fitted to the data minus the holdout samples. A forecast horizon of width __H__ is then generated and error calculated against the corresponding __H__ holdout samples. The process is repeated by adding one holdout sample to the series and refitting the model. Another forecast is created and error calculated. This process repeats until the backtesting process has used all of the holdout samples. The overall mean error from the backtesting is used to rank the models.
 
 ![Backtesting](./backtest.jpg)
 
@@ -57,8 +57,8 @@ The original project required extensive computer resources, therefor this demons
 * A report is automatically generated using R Markdown and the knitr package.
 * Some of the more time consuming or less effective modeling methods have been removed.
 
-|Models|
-|:--------|
+|Removed Models|
+|:-------------|
 |STLM|
 |BSTS|
 |THETAM|
@@ -70,7 +70,7 @@ The original project required extensive computer resources, therefor this demons
 
 ## System Diagram
 
-The RUDI demo is separated into two major components. The front end is an R Shiny App, and is hosted by R Shiny Server, running on an Ubuntu Server instance on Amazon Web Services. The back end is performs all of the modeling, and is running on a home PC. Redis Server is used to communicate between the front and back ends.
+The RUDI demo is separated into two major components. The front end is an R Shiny App, and is hosted by R Shiny Server, running on an Ubuntu Server instance on Amazon Web Services. The back end performs all of the modeling, and is running on a home PC. Redis Server is used to communicate between the front and back ends.
 
 ![System Diagram](./rudi_system_diagram.jpg)
 

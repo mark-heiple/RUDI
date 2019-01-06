@@ -8,25 +8,25 @@ This is a demonstration of my capstone team project for the Master's in Predicti
 
 Industry Expert & Data Visualization Specialist
 
-Susan has more than 20 years of business experience including marketing, forecasting, and supply chain management in both professional and CPG industries. She holds a BS in electrical engineering from University of Illinois, a MBA in Marketing Management from DePaul University Kellstadt School of Business, and is pursuing a MS in Predictive Analytics from Northwestern University.
+Susan has more than 20 years of business experience including marketing, forecasting, and supply chain management in both professional and CPG industries. She holds a BS in electrical engineering from University of Illinois, a MBA in Marketing Management from DePaul University Kellstadt School of Business, and a MS in Predictive Analytics from Northwestern University.
 
 ### Mark Heiple
 
 Software Engineering Expert
 
-Mark has over 25 years of experience designing security and encryption software systems for various government agencies. He holds a BS in electrical engineering from the Rose-Hulman Institute of Technology. He is pursuing a MS in Predictive Analytics from Northwestern University. Mark’s roles are EDA, building predictive models, and software development.
+Mark has over 25 years of experience designing security and encryption software systems for various government agencies. He holds a BS in electrical engineering from the Rose-Hulman Institute of Technology and a MS in Predictive Analytics from Northwestern University. Mark’s roles are EDA, building predictive models, and software development.
 
 ### Priya Menon
 
 Data scientist and Analytics Professional
 
-10 years of research, teaching and industry experience. Worked in various roles from operations research, retail, banking and marketing analytics. Priya has a M.S in Statistics from Mangalore University (India) and is completing masters degree in predictive analytics Northwestern University. Priya’s roles include EDA, modeling and forecasting.
+10 years of research, teaching and industry experience. Worked in various roles from operations research, retail, banking and marketing analytics. Priya has a M.S in Statistics from Mangalore University (India) and a MS in Predictive Analytics from Northwestern University. Priya’s roles include EDA, modeling and forecasting.
 
 ### Sally Payne
 
 Predictive analytics professional with 10 years experience in database marketing.
 
-Sally has a B.A. in economics from the University of Chicago and is finishing up a master’s degree in predictive analytics from Northwestern University. Team responsibilities include EDA, model building, documentation.
+Sally has a B.A. in economics from the University of Chicago and MS in Predictive Analytics from Northwestern University. Team responsibilities include EDA, model building, documentation.
 
 ## RUDI Processing
 

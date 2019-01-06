@@ -2,6 +2,32 @@
 
 This is a demonstration of my capstone team project for the Master's in Predictive Analytics program at Northwestern University. Fans of "The Jetsons" cartoon may recognize the name we chose for our forecasting system. The capstone project automatically analyzed and forecasted product shipments for a hierarchy of time series representing inventory data for a consumer packaged goods company. The hierarchy consisted of 140 individual products organized into 50 product groups, for a total of 191 time series. The team's system improved upon the company's internal SAP based forecasting system by a savings of approximately $1.1 Million over 6 months.
 
+## The Team
+
+### Susan Chauhan
+
+Industry Expert & Data Visualization Specialist
+
+Susan has more than 20 years of business experience including marketing, forecasting, and supply chain management in both professional and CPG industries. She holds a BS in electrical engineering from University of Illinois, a MBA in Marketing Management from DePaul University Kellstadt School of Business, and is pursuing a MS in Predictive Analytics from Northwestern University.
+
+### Mark Heiple
+
+Software Engineering Expert
+
+Mark has over 25 years of experience designing security and encryption software systems for various government agencies. He holds a BS in electrical engineering from the Rose-Hulman Institute of Technology. He is pursuing a MS in Predictive Analytics from Northwestern University. Mark’s roles are EDA, building predictive models, and software development.
+
+### Priya Menon
+
+Data scientist and Analytics Professional
+
+10 years of research, teaching and industry experience. Worked in various roles from operations research, retail, banking and marketing analytics. Priya has a M.S in Statistics from Mangalore University (India) and is completing masters degree in predictive analytics Northwestern University. Priya’s roles include EDA, modeling and forecasting.
+
+### Sally Payne
+
+Predictive analytics professional with 10 years experience in database marketing.
+
+Sally has a B.A. in economics from the University of Chicago and is finishing up a master’s degree in predictive analytics from Northwestern University. Team responsibilities include EDA, model building, documentation.
+
 ## RUDI Processing
 
 RUDI generates forecasts by running each individual time series through a suite of modeling methods. Backtesting is used to calculate the Mean Absolute Percent Error (MAPE) of forecasts for each method. The three models with the lowest MAPE are saved. Finally the forecasts for the top three models are reconciled to account for the hierarchy.

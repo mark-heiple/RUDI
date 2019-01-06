@@ -20,13 +20,13 @@ Mark has over 25 years of experience designing security and encryption software 
 
 Data scientist and Analytics Professional
 
-10 years of research, teaching and industry experience. Worked in various roles from operations research, retail, banking and marketing analytics. Priya has a M.S in Statistics from Mangalore University (India) and a MS in Predictive Analytics from Northwestern University. Priya’s roles include EDA, modeling and forecasting.
+10 years of research, teaching and industry experience. Worked in various roles from operations research, retail, banking and marketing analytics. Priya has a MS in Statistics from Mangalore University (India) and a MS in Predictive Analytics from Northwestern University. Priya’s roles include EDA, modeling and forecasting.
 
 ### Sally Payne
 
 Predictive analytics professional with 10 years experience in database marketing.
 
-Sally has a B.A. in economics from the University of Chicago and MS in Predictive Analytics from Northwestern University. Team responsibilities include EDA, model building, documentation.
+Sally has a B.A. in economics from the University of Chicago and a MS in Predictive Analytics from Northwestern University. Team responsibilities include EDA, model building, documentation.
 
 ## RUDI Processing
 

@@ -110,13 +110,13 @@ The RUDI demo presents an **[Upload]** button, which uplooads a CSV file as inpu
 
 * Up to two seasonal periods can be defined, a value of 1 means no season. Seasonal periods are much more processor intensive than no seasons. Big seasonal periods are more processor intensive than short periods.
 
-* Backtest Holdout Samples - The number of holdout samples for backtesting. The number of holdout samples is limited to 6. Large numbers of holdout samples greatly increases the processing required.
+* Number of Backtest Steps - the number backtest windows that will be forecasted and tested. This is limited to a maximum of 6. This greatly slows processing.
 
 * Backtest Window Size - The number of steps forecasted for each backtest step.
 
-* Forecast Horizon (defaults to 1) - The number of out of sample steps to forecast. Short forecast horizons don't look very interesting.
+* Backtest Holdout Samples - The number of holdout samples for backtesting. This based on the Number of Backtest Steps and Backtest Window Size.
 
-* Number of Steps in Horizon - The number of steps to forecast. This defaults to 1, which isn't very interesting. 
+* Forecast Horizon (defaults to 1) - The number of out of sample steps to forecast. Short forecast horizons don't look very interesting.
 
 Note that RUDI does not preserve models. Any changes, including the Forecast Horizon, requires RUDI to re-run all of the models.
 

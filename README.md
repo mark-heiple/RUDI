@@ -85,7 +85,6 @@ The original project required extensive computer resources, therefor this demons
 
 |Removed Models|
 |:-------------|
-|STLM|
 |BSTS|
 |THETAM|
 |NNETAR|

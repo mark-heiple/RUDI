@@ -80,6 +80,7 @@ The original project required extensive computer resources, therefor this demons
 * The time series is limited to 1000 values.
 * Hierarchy reconciliation is not performed.
 * Forecasts for all of the models are returned, rather than just the top three.
+* Models are ranked by RMSE rather than MAPE.
 * A report is automatically generated using R Markdown and the knitr package.
 * Some of the more time consuming or less effective modeling methods have been removed.
 
